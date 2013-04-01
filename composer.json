@@ -1,9 +1,9 @@
 {
-    "name": "garoudan/phpmath",
+    "name": "garoudan/philodox",
     "type": "library",
-    "description": "Library to run Mathematica functions through PHP. Virtually could run any non-graphical Mathematica function.",
-    "keywords": ["PHP","Mathematica","MathKernel","math","MathematicaScript"],
-    "homepage": "https://github.com/GarouDan/phpmath",
+    "description": "Library to run math functions.",
+    "keywords": ["php","math","mathematica"],
+    "homepage": "https://github.com/GarouDan/philodox",
     "license": "MIT",
     "authors": [
         {
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "PHPMath" : "core/Backend/Model"
+            "*" : "core/Backend/Model",
         }
     }
 }
