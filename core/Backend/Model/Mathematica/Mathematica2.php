@@ -1,5 +1,5 @@
 <?php
-namespace GarouDan\Philodox;
+namespace GarouDan\Philodox\Mathematica;
 
 /**
  * Main class of PHPMath.
