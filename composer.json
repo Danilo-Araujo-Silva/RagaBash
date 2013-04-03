@@ -1,9 +1,9 @@
 {
-    "name": "garoudan/philodox",
+    "name": "garoudan/ragabash",
     "type": "library",
     "description": "Library to run math functions.",
     "keywords": ["php","math","mathematica"],
-    "homepage": "https://github.com/GarouDan/philodox",
+    "homepage": "https://github.com/GarouDan/RagaBash",
     "license": "MIT",
     "authors": [
         {
