@@ -1,5 +1,8 @@
 {
-    "Mathematica": {
-        "Executable" : "core/Backend/Model/Mathematica/Shell.mathematica"
+    "Executable": "core/Backend/Executable/Mathematica/Shell.mathematica",
+    "Result": "core/Backend/Executable/Mathematica/Result.mathematica",
+    "Test": {
+        "Call" : "Prime[100]",
+        "Result": "541"
     }
 }
