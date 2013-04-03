@@ -16,7 +16,7 @@ class Router
                 public $executable;
                 public $model;
                     public $mathematica;
-                    public $philodox;                    
+                    public $ragabash;                    
             public $frontend;
                 public $css;
                 public $docummentation;
@@ -34,7 +34,7 @@ class Router
                     $this->executable = "{$this->backend}Executable/";
                     $this->model = "{$this->backend}Model/";
                         $this->mathematica = "{$this->model}Mathematica/";
-                        $this->philodox = "{$this->model}Philodox/";
+                        $this->ragabash = "{$this->model}Philodox/";
                 $this->frontend = "{$this->core}Frontend/";
                     $this->css = "{$this->frontend}CSS/";
                     $this->docummentation = "{$this->frontend}/Docummentation";
@@ -50,11 +50,11 @@ class Router
         
         $exploded = explode($filePath, "/");
         
-        array_pop($exploded);   // Philodox
+        array_pop($exploded);   // Main
         array_pop($exploded);   // Model
         array_pop($exploded);   // Backend
-        array_pop($exploded);   // core
-        array_pop($exploded);   // Philodox
+        array_pop($exploded);   // Core
+        array_pop($exploded);   // Ragabash
         
         $rootPath = implode("/", $exploded)."/";
         

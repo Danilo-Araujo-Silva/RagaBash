@@ -1,7 +1,7 @@
 <?php
-namespace Garoudan\Philodox;
+namespace Garoudan\RagaBash\Core\Backend\Model\Main;
 
-use Garoudan\Philodox\Router;
+use Garoudan\RagaBash\Core\Backend\Model\Main\Router;
 
 class Main
 {
