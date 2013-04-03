@@ -56,6 +56,18 @@ class Main
         }
     }
     
+    public function isValidConfig()
+    {
+        if (
+            empty($this->config->Executable) ||
+            empty($this->config->Result) ||
+            empty($this->config->Test->Call) ||
+            empty($this->config->Test->Result)
+        ) {
+            return false;
+        }
+    }
+    
     public function run($call="")
     {
         try{
@@ -88,7 +100,7 @@ class Main
     public function setConfig()
     {
         $this->getConfig();
-        $this->executable = $this->config->Executable;
+        $this->executable = $this->router.$this->config->Executable;
         
         return true;
     }
