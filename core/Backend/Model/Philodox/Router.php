@@ -13,10 +13,10 @@ class Router
             public $backend;
                 public $config;
                 public $controller;
+                public $executable;
                 public $model;
                     public $mathematica;
                     public $philodox;                    
-                public $view;
             public $frontend;
                 public $css;
                 public $docummentation;
@@ -31,10 +31,10 @@ class Router
                 $this->backend = "{$this->core}Backend/";
                     $this->config = "{$this->backend}Config/";
                     $this->controller = "{$this->backend}Controller/";
+                    $this->executable = "{$this->backend}Executable/";
                     $this->model = "{$this->backend}Model/";
                         $this->mathematica = "{$this->model}Mathematica/";
                         $this->philodox = "{$this->model}Philodox/";
-                    $this->view = "{$this->backend}View/";
                 $this->frontend = "{$this->core}Frontend/";
                     $this->css = "{$this->frontend}CSS/";
                     $this->docummentation = "{$this->frontend}/Docummentation";

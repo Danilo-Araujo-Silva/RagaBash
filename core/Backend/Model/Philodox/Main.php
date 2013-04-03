@@ -7,8 +7,11 @@ class Main
 {
     private $executable;
     
+    private $className;
+    
     public function construct()
     {
+        $this->className = get_class($this);
         $router = new Router;
         $this->configure();
     }
