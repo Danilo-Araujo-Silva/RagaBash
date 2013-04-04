@@ -10,6 +10,7 @@ class Main
     private $errors;
     private $executable;
     private $informations;
+    private $result;
     private $router;
     private $warnings;
     
@@ -77,7 +78,7 @@ class Main
                 $this->erros[] = $message;
             }
             
-            $completeCall = "{$this->executable} '$call'";
+            $completeCall = "{$this->executable} '$call' {$this->result}";
             shell_exec($completeCall);
             
             if (!file_exists($this->config->Result)) {
@@ -101,6 +102,7 @@ class Main
     {
         $this->getConfig();
         $this->executable = $this->router.$this->config->Executable;
+        $this->result = $this->router.$this->config->Result;
         
         return true;
     }

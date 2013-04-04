@@ -11,10 +11,10 @@ class RagaBash
             in_array(
                 $engine,
                 array(
-                    "MatLab",
-                    "Maple",
+//                    "MatLab",
+//                    "Maple",
                     "Mathematica",
-                    "Octave"
+//                    "Octave"
                 )
             )
         ) {
