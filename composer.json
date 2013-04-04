@@ -18,9 +18,9 @@
     },
     "autoload": {
         "psr-0": {
-            "Model" : "Core/Backend/Class/",
-            "Controller" : "Core/Backend/Class/",
-            "RagaBash" : "Core/Backend/Class/"
+            "Model" : "core/Backend/Class/",
+            "Controller" : "core/Backend/Class/",
+            "RagaBash" : "core/Backend/Class/"
         }
     }
 }
