@@ -18,7 +18,7 @@ class Build
                 )
             )
         ) {
-            $class = "Model\\$engine\\$engine";
+            $class = "GarouDan\\RagaBash\\Model\\$engine\\$engine";
             return new $class;
         } else {
             return false;
