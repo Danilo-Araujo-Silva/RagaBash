@@ -1,5 +1,5 @@
 {
-    "name": "garoudan/ragabash",
+    "name": "GarouDan/RagaBash",
     "type": "library",
     "description": "Library to run math functions.",
     "keywords": ["php","math","mathematica"],
@@ -18,8 +18,8 @@
     },
     "autoload": {
         "psr-0": {
-            "" : "Core/Backend/Model",
-            "" : ""
+            "Model" : "Core/Backend/",
+            "Controller" : "Core/Backend/"
         }
     }
 }
