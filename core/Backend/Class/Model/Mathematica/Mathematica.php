@@ -1,6 +1,6 @@
 <?php
-namespace Garoudan\RagaBash\Model\Mathematica;
+namespace RagaBash\Model\Mathematica;
 
-class Mathematica extends \Garoudan\RagaBash\Model\Main
+class Mathematica extends \RagaBash\Model\Main
 {
 }

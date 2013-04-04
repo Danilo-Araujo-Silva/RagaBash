@@ -1,7 +1,7 @@
 <?php
-namespace GarouDan\RagaBash;
+namespace RagaBash;
 
-use Garoudan\RagaBash\Model;
+use RagaBash\Model;
 
 class Build
 {

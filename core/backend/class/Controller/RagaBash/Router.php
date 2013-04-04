@@ -1,5 +1,5 @@
 <?php
-namespace Garoudan\RagaBash\Controller\RagaBash;
+namespace RagaBash\Controller\RagaBash;
 
 /**
  * Class with the common routing.
