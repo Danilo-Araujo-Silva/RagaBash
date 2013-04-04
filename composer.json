@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "*" : "core/Backend/Model"
+            "*" : "Core/Backend/Model"
         }
     }
 }
