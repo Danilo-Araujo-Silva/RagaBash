@@ -3,8 +3,8 @@ namespace Garoudan\Philodox;
 
 /**
  * Class with the common routing.
- * This class uses a particular identation (not standart),
- *  but visually helpfull.
+ * This class uses a particular identation (not standard),
+ *  but visually helpfull. '_' means directory separator.
  */
 class Router
 {
