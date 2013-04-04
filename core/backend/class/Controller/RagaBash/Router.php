@@ -50,13 +50,13 @@ class Router
     {
         $filePath = dirname(__FILE__);
         
-        $exploded = explode($filePath, "/");
+        $exploded = explode("/", $filePath);
         
-        array_pop($exploded);   // Main
-        array_pop($exploded);   // Model
-        array_pop($exploded);   // Backend
-        array_pop($exploded);   // Core
-        array_pop($exploded);   // Ragabash
+        array_pop($exploded);   // Controller
+        array_pop($exploded);   // class
+        array_pop($exploded);   // backend
+        array_pop($exploded);   // core
+        array_pop($exploded);   // ragabash
         
         $rootPath = implode("/", $exploded)."/";
         

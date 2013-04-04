@@ -14,9 +14,9 @@ class Main
     private $router;
     private $warnings;
     
-    public function construct()
+    public function __construct()
     {
-        $this->className = get_class($this);
+        $this->className = end(explode("\\", get_class($this)));
         $this->router = new Router;
         $this->configure();
     }
@@ -114,8 +114,8 @@ class Main
     public function setConfig()
     {
         $this->getConfig();
-        $this->executable = $this->router.$this->config->Executable;
-        $this->result = $this->router.$this->config->Result;
+        $this->executable = $this->router->root.$this->config->Executable;
+        $this->result = $this->router->root.$this->config->Result;
         
         return true;
     }

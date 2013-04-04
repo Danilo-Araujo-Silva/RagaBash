@@ -1,6 +1,6 @@
 {
-    "Executable": "Core/Backend/Executable/Mathematica/Shell.mathematica",
-    "Result": "Temporary/Calculation/Mathematica/Result.dat",
+    "Executable": "core/backend/executable/Mathematica/Shell.mathematica",
+    "Result": "temporary/calculation/Mathematica/Result.dat",
     "Test": {
         "Call" : "Prime[100]",
         "Result": "541"
