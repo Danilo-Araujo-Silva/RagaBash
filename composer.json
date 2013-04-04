@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "GarouDan" : "core/backend/class/"
+            "GarouDan" : "core/backend/class"
         }
     }
 }
