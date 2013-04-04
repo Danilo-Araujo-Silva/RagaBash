@@ -1,0 +1,13 @@
+{
+    "Executable": "core/Backend/Executable/Maple/Shell.maple",
+    "Result": "core/Backend/Executable/Maple/Result.dat",
+    "Limit": {
+        "File": {
+            "Lenght": "1000"
+        }
+    },
+    "Test": {
+        "Call" : "Prime(100)",
+        "Result": "541"
+    }
+}

@@ -32,6 +32,35 @@ class Main
         return true;
     }
     
+    public function export($call = "")
+    {
+        try{
+            if (!$this->isReadableAndExecutable()) {
+                $message = "The file '{$this->executable}' should be readable and executable. Please give to it at least the '555' permission.";
+                throw new \Exception($message);
+                $this->erros[] = $message;
+            }
+            
+            $completeCall = "{$this->executable} '$call' {$this->result}";
+            shell_exec($completeCall);
+            
+            if (!file_exists($this->config->Result)) {
+                $message = "Was not possible perform this calculation. The result file was not created.";
+                throw new \Exception($message);
+                $this->erros[] = $message;
+            } else {
+                if (filesize($this->config->Result) == 0) {
+                    $message = "Was not possible perform this calculation. The result file is empty.";
+                    throw new \Exception($message);
+                    $this->erros[] = $message;
+                }
+            }
+            
+        } catch (Exception $exception) {
+            
+        }
+    }
+    
     public function getConfig()
     {
         try {
@@ -69,33 +98,17 @@ class Main
         }
     }
     
+    public function readResultFile($length = 1000)
+    {
+        $file = fopen($this->config->Result);
+        $result = fread($file, $this->config->Limit->File->Lenght);
+        
+        return $result;
+    }
+    
     public function run($call="")
     {
-        try{
-            if (!$this->isReadableAndExecutable()) {
-                $message = "The file '{$this->executable}' should be readable and executable. Please give to it at least the '555' permission.";
-                throw new \Exception($message);
-                $this->erros[] = $message;
-            }
-            
-            $completeCall = "{$this->executable} '$call' {$this->result}";
-            shell_exec($completeCall);
-            
-            if (!file_exists($this->config->Result)) {
-                $message = "Was not possible perform this calculation. The result file was not created.";
-                throw new \Exception($message);
-                $this->erros[] = $message;
-            } else {
-                if (filesize($this->config->Result) == 0) {
-                    $message = "Was not possible perform this calculation. The result file is empty.";
-                    throw new \Exception($message);
-                    $this->erros[] = $message;
-                }
-            }
-            
-        } catch (Exception $exception) {
-            
-        }
+        $this->export($call);
     }
     
     public function setConfig()

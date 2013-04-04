@@ -1,0 +1,8 @@
+{
+    "Executable": "core/Backend/Executable/Octave/Shell.octave",
+    "Result": "core/Backend/Executable/Octave/Result.dat",
+    "Test": {
+        "Call" : "Prime[100]",
+        "Result": "541"
+    }
+}
