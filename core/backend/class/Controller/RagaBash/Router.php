@@ -25,7 +25,7 @@ class Router
             public $calculation;
         public $vendor;
         
-    public function construct()
+    public function __construct()
     {
         $this->setRootPath();
             $this->core = "{$this->root}core/";
