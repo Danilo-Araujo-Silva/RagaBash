@@ -22,5 +22,10 @@
             "Controller" : "core/Backend/class/",
             "RagaBash" : "core/Backend/class/"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1"
+        }
     }
 }

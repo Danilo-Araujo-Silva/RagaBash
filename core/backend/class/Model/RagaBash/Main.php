@@ -1,7 +1,7 @@
 <?php
-namespace RagaBash\Model\RagaBash;
+namespace GarouDan\RagaBash\Model\RagaBash;
 
-use RagaBash\Controller\RagaBash\Router;
+use GarouDan\RagaBash\Controller\RagaBash\Router;
 
 class Main
 {
