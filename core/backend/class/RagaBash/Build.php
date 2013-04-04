@@ -1,9 +1,9 @@
 <?php
 namespace GarouDan\RagaBash;
 
-use Garoudan\RagaBash\Core\Backend\Model;
+use Garoudan\RagaBash\Model;
 
-class RagaBash
+class Build
 {
     public static function engine($engine)
     {
@@ -11,10 +11,10 @@ class RagaBash
             in_array(
                 $engine,
                 array(
-//                    "MatLab",
-//                    "Maple",
+                    "MatLab",
+                    "Maple",
                     "Mathematica",
-//                    "Octave"
+                    "Octave"
                 )
             )
         ) {

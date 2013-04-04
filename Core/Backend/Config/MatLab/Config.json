@@ -1,8 +1,0 @@
-{
-    "Executable": "core/Backend/Executable/MatLab/Shell.matlab",
-    "Result": "core/Backend/Executable/MatLab/Result.dat",
-    "Test": {
-        "Call" : "Prime[100]",
-        "Result": "541"
-    }
-}

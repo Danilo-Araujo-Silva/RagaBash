@@ -1,6 +1,6 @@
 {
-    "Executable": "core/Backend/Executable/Maple/Shell.maple",
-    "Result": "core/Backend/Executable/Maple/Result.dat",
+    "Executable": "Core/Backend/Executable/Maple/Shell.maple",
+    "Result": "Temporary/Calculation/Maple/Result.dat",
     "Limit": {
         "File": {
             "Lenght": "1000"

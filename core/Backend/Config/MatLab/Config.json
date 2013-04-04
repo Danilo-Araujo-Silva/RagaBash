@@ -1,0 +1,8 @@
+{
+    "Executable": "Core/Backend/Executable/MatLab/Shell.matlab",
+    "Result": "Temporary/Calculation/MatLab/Result.dat",
+    "Test": {
+        "Call" : "Prime[100]",
+        "Result": "541"
+    }
+}

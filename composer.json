@@ -18,8 +18,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Model" : "Core/Backend/",
-            "Controller" : "Core/Backend/"
+            "Model" : "Core/Backend/Class/",
+            "Controller" : "Core/Backend/Class/"
         }
     }
 }
