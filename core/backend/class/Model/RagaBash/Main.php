@@ -78,6 +78,17 @@ class Main
         }
     }
     
+    public function getResult()
+    {
+        try {
+            $result = file_get_contents($this->result);
+            
+            return $result;
+        } catch (Exception $exception) {
+            
+        }
+    }
+    
     public function isReadableAndExecutable()
     {
         if (
@@ -113,6 +124,10 @@ class Main
     public function run($call="")
     {
         $this->export($call);
+        
+        $result = $this->getResult();
+        
+        return $result;
     }
     
     public function setConfig()
@@ -127,7 +142,7 @@ class Main
     public function test()
     {
         $result = $this->run($this->config->Test->Call);
-        $answer = $this->config->Test->Answer;
+        $answer = $this->config->Test->Result;
         
         if ($result === $answer) {
             return true;
