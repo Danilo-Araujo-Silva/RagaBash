@@ -42,15 +42,19 @@ class Main
             }
             
             $completeCall = "{$this->executable} '$call' {$this->result}";
-            shell_exec($completeCall);
+            $return = shell_exec($completeCall);
             
-            if (!file_exists($this->router->root.$this->config->Result)) {
+            if (!file_exists($this->result)) {
                 $message = "Was not possible perform this calculation. The result file was not created.";
                 throw new \Exception($message);
                 $this->erros[] = $message;
             } else {
-                if (filesize($this->router->root.$this->config->Result) == 0) {
+                if (filesize($this->result) == 0) {
                     $message = "Was not possible perform this calculation. The result file is empty.";
+                    throw new \Exception($message);
+                    $this->erros[] = $message;
+                } elseif (!empty($return)) {
+                    $message = "Was not possible perform this calculation. RagaBash could not open {$this->result}.";
                     throw new \Exception($message);
                     $this->erros[] = $message;
                 }
